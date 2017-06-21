@@ -1,0 +1,104 @@
+@charset "utf-8";
+/*底部导航*/
+
+.newrecord-nav{
+    height: 51px;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #ddd; 
+    box-sizing: border-box; 
+}
+.newrecord-nav a.list{
+    display: inline-block;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    padding-top: 26px;
+    width: 33.33333333333333%;
+    text-align: center;
+    color: #8C8C8C;
+    position: relative;
+    font-size: 12px;
+}
+.newrecord-nav.two {
+    background-color: #F6F6F6;
+}
+
+
+.newrecord-nav.two a.list{
+    width: 50%;
+}
+.newrecord-nav.three a.list{
+    width: 33.3333%;
+}
+
+/*.newrecord-nav.two .edit{
+    position: absolute;
+    left: 50%;
+    margin-left: -26px;
+    background:url(../image/nav-center.png) center no-repeat;
+    background-size: 52px 55px;
+    top: -20px;
+    width: 52px;
+    height: 55px;
+    display: inline-block;
+}
+
+.newrecord-nav.three .edit{
+    position: absolute;
+    right: 10px;
+    background: url(../image/nav-posi.png);
+    background-size: 62px 62px;
+    top: -70px;
+    width: 62px;
+    height: 62px;
+    display: inline-block;
+}*/
+
+
+.newrecord-nav a.list em{
+    display: block;
+    width: 26px;
+    height: 22px;
+    position: absolute;
+    left: 50%;
+    margin-left: -13px;
+    top: 5px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 26px 22px;
+}
+
+.newrecord-nav a.list:nth-child(1) em{
+    background-image: url(../image/vote2.png);   
+}
+.newrecord-nav a.list:nth-child(2) em{
+    background-image: url(../image/message2.png);   
+}
+
+
+
+.newrecord-nav a.list:nth-child(1).curr em{
+    background-image: url(../image/vote1.png);   
+}
+.newrecord-nav a.list:nth-child(2).curr em{
+    background-image: url(../image/message1.png);   
+}
+
+.newrecord-nav a.curr{
+    color: #09BB07;
+}
+
+.newrecord-nav.two > a > em > i{
+    position: absolute;
+    right: -1px;
+    top: 0px;
+    width: 7px;
+    height: 7px;
+    border-radius:50% ;
+    background-color: #f00;
+    display: none;
+}

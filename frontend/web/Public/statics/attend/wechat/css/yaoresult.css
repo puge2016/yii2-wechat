@@ -1,0 +1,415 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    background: #f1f2f4;
+}
+
+.shake-wrap {
+    /*text-align: center;
+    line-height: 250%;
+    height: 95%;*/
+}
+
+
+.shake-wrap .t{
+    height: 45px;
+    line-height: 45px;
+    background-color: #E5E6E8;
+    color: #19A684;
+    position: relative;
+    text-align: left;
+    text-indent: 10px;
+}
+.shake-wrap .t ins{
+    display: block;
+    height: 45px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    padding-right: 20px;
+    background: url(../images/reload.png) no-repeat right center;
+    background-size: 13px 12px ;
+}
+.shake-wrap h1,.shake-wrap h2,.shake-wrap h3,.shake-wrap h4{
+    text-align: center;
+    font-family: "微软雅黑";
+    font-weight: normal;
+}
+.shake-wrap h1 {
+    font-size: 3em;
+    color: #787878;
+    padding: 20px 0 0 0;
+    
+}
+
+.shake-wrap h2 {
+    font-size: 16px;
+    color: #b4b4b4;
+    padding: 20px 0 0 0;
+    
+}
+
+
+.shake-wrap h3 {
+    color: #434345;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.shake-wrap h4 {
+    color: #434345;
+    font-size: 16px;
+    padding: 10px 10px 30px 15px;
+    text-align: left;
+}
+
+
+
+#error .i{
+    height: 168px;
+    margin: 30px auto 0 auto;
+    background: url(../images/nolocation.png) no-repeat center 0;
+    background-size: auto 168px;
+}
+
+#error ul{
+    padding: 20px 15px 0 15px;
+}
+#error ul li{
+    text-align: left;
+    font-family: "微软雅黑";
+    line-height: 25px;
+    color: #797979;;
+}
+#error ul li:first-child{
+    font-size: 16px;
+    line-height: 40px;
+    color: #000;
+}
+
+.shake-wrap h4 a {
+    color: #00af89;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*签到开始*/
+
+.qian {
+    text-align: center;
+    height: 96%;
+    overflow: scroll;
+}
+
+.qian h1 {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #00af89;
+    padding-top: 5%;
+}
+
+.qian h2 {
+    font-size: 0.9em;
+    color: #505050;
+    padding: 2% 0;
+}
+
+.qian .help {
+    background: #00af89;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 10px;
+    width: 90%;
+    margin: 5%;
+    z-index: 1;
+}
+
+.qian .help a {
+    color: #fff;
+    padding: 6px 0;
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*摇一摇分享*/
+
+.fen_nr {
+    border-top: 1px solid #d2d2d2;
+    margin-top: 5%;
+    padding-top: 3%;
+}
+
+.fen_nr textarea {
+    height: 80px;
+    width: 90%;
+    overflow-y: scroll;
+    font-size: 0.8em;
+}
+
+.fen_nr a.xuan {
+    border: 1px solid #b4b4b4;
+    padding: 5px 6px 3px 6px;
+    display: block;
+    width: 12%;
+    margin: 5%;
+}
+
+.arrivie {
+    float: left;
+}
+
+/*#checkyao {
+    font-size: 22px;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2) {
+    /* 兼容iphone4/4s */
+    .shake-wrap h1 {
+        padding-top: 2%;
+    }
+}
+
+.mobel-cricle {
+    width: 220px;
+    height: 220px;
+    border: 1px solid #02ae88;
+    border-radius: 110px;
+    margin: 25px auto;
+}
+
+
+
+/*.mobelnr2 {
+    width: 220px;
+    height: 220px;
+    border: 0px solid #02ae88;
+    border-radius: 500%;
+    margin: 8% 0 5% 0;
+}*/
+
+.shake-wrap .mobel {
+    width: 100%;
+    height: 100%;
+    background: url(../images/yao.png) no-repeat left top;
+    background-size: 100%;
+    transform-origin: center;
+    -webkit-animation: cricleAction 2s infinite;
+    -moz-animation: cricleAction 2s infinite;
+    -o-animation: cricleAction 2s infinite;
+    animation: cricleAction 2s infinite;
+    -moz-transform-origin: center;
+    -ms-transform-origin: center;
+    -o-transform-origin: center;
+    transform-origin: center;
+    /*-webkit-transform: rotate(255deg);
+-moz-transform: rotate(255deg);
+-o-transform: rotate(255deg);
+-ms-transform: rotate(255deg);
+transform: rotate(255deg);	*/
+}
+
+
+
+@keyframes cricleAction {
+    0% {
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        transform: rotate(5deg);
+    }
+    25% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    50% {
+        -webkit-transform: rotate(25deg);
+        -moz-transform: rotate(25deg);
+        -o-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+        transform: rotate(25deg);
+    }
+    100% {
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        transform: rotate(5deg);
+    }
+}
+
+@-moz-keyframes cricleAction {
+    0% {
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        transform: rotate(5deg);
+    }
+    25% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    50% {
+        -webkit-transform: rotate(25deg);
+        -moz-transform: rotate(25deg);
+        -o-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+        transform: rotate(25deg);
+    }
+    100% {
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        transform: rotate(5deg);
+    }
+}
+
+@-webkit-keyframes cricleAction {
+    0% {
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        transform: rotate(5deg);
+    }
+    25% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    50% {
+        -webkit-transform: rotate(25deg);
+        -moz-transform: rotate(25deg);
+        -o-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+        transform: rotate(25deg);
+    }
+    100% {
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        transform: rotate(5deg);
+    }
+}
+
+@-webkit-keyframes cricleAction {
+    0% {
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        transform: rotate(5deg);
+    }
+    25% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    50% {
+        -webkit-transform: rotate(25deg);
+        -moz-transform: rotate(25deg);
+        -o-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
+        transform: rotate(25deg);
+    }
+    100% {
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        transform: rotate(5deg);
+    }
+}
+
+
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2) {
+    /* 兼容iphone4/4s */
+    /*.mobelnr {
+        width: 180px;
+        height: 180px;
+        border: 1px solid #02ae88;
+        border-radius: 500%;
+        margin: 4% 0 5% 0;
+    }*/
+}
+
+.attend-result{
+    font-family: "微软雅黑";
+}
+.attend-result h1,
+.attend-result h2{
+    font-weight: normal;
+}
+
+
+.attend-result h1{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #00AF89;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px 0 015px 0;
+}
+
+.attend-result h2{
+    font-size: 14px;
+    text-align: center;
+}
+
+.attend-result .share-img{
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.attend-result ul li{
+    padding-bottom: 15px;
+}
+
+.warning{
+    color: #f00;
+}
